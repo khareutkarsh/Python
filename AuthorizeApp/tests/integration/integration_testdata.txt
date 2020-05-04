@@ -1,0 +1,13 @@
+{"transaction": {"merchant": "Burger King", "amount": 20, "time": "2019-02-13T10:00:00.000Z"}}|{"account": null, "violations": ["account-not-initialized"]}
+{"account": {"active-card": true, "available-limit": 100}}|{"account": {"active-card": true, "available-limit": 100}, "violations": []}
+{"account": {"active-card": true, "available-limit": 350}}|{"account": {"active-card": true, "available-limit": 100}, "violations": ["account-already-initialized"]}
+{"account": {"active-card": false, "available-limit": 100}}|{"account": {"active-card": false, "available-limit": 100}, "violations": []}
+{"account": {"active-card": true, "available-limit": 100}}|{"account": {"active-card": true, "available-limit": 100}, "violations": []}
+{"transaction": {"merchant": "Burger King", "amount": 10, "time": "2019-02-13T10:00:00.000Z"}}|{"account": {"active-card": true, "available-limit": 90}, "violations": []}
+{"transaction": {"merchant": "ALDI", "amount": 10, "time": "2019-02-13T13:00:00.000Z"}}|{"account": {"active-card": true, "available-limit": 80}, "violations": []}
+{"transaction": {"merchant": "LIDL", "amount": 120, "time": "2019-02-13T11:00:00.000Z"}}|{"account": {"active-card": true, "available-limit": 80}, "violations": ["insufficient-limit"]}
+{"transaction": {"merchant": "LIDL", "amount": 20, "time": "2019-02-13T11:05:00.000Z"}}|{"account": {"active-card": true, "available-limit": 60}, "violations": []}
+{"transaction": {"merchant": "Burger King", "amount": 10, "time": "2019-02-13T10:01:05.000Z"}}|{"account": {"active-card": true, "available-limit": 60}, "violations": ["doubled-transaction"]}
+{"transaction": {"merchant": "National Rail", "amount": 20, "time": "2019-02-13T10:01:55.000Z"}}|{"account": {"active-card": true, "available-limit": 40}, "violations": []}
+{"transaction": {"merchant": "Mc Donalds", "amount": 15, "time": "2019-02-13T10:00:55.000Z"}}|{"account": {"active-card": true, "available-limit": 25}, "violations": []}
+{"transaction": {"merchant": "Dominos", "amount": 10, "time": "2019-02-13T10:01:15.000Z"}}|{"account": {"active-card": true, "available-limit": 25}, "violations": ["high-frequency-small-interval"]}
